@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/98fea96e98.js" crossorigin="anonymous"></script>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                title: '##1C1C1C',
+                details: '#777',
+              }
+            },
+            fontFamily:{
+                sans:['Manrope, sans-serif'],
+            }
+          }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="container mx-auto p-4 font-sans">
+     <header class="mx-auto md:mx-24 mt-16">
+        <div class="md:flex justify-between items-center">
+            <div class="space-y-6">
+                <h1 class="text-7xl font-semibold text-title space-y-3">It's good 
+                    <br> 
+                    tea time at The
+                    <br>
+                     Tea House</h1>
+                     <p class="text-lg text-details font-sans">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                     <button class="flex gap-3 py-4 px-8 rounded-lg text-white bg-gradient-to-r from-[#FF8938] to-[#F00]">
+                       <span>Explore More</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </button>
+            </div>
+            <!-- banner image -->
+            <div class="flex flex-col">
+                <img src="images/banner.png" alt="">
+                <!-- button -->
+                <div class="flex gap-6 items-center w-72 h-28 bg-[#FFF] rounded-xl p-7 shadow-2xl md:mx-26 -mt-24 md:-mt-32">
+                    <span><i class="fa-solid fa-star text-[#FFF082]"></i></span>
+                    <div>
+                        <p class="text-3xl">5.00</p>
+                        <p class="text-base text-details">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <main></main>
+
+     <footer></footer>
 </body>
 </html>
